@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyStore Suite">
+    <listeners>
+        <listener class-name="com.myStore.test.listener.ExtentTestListener"/>
+        <listener class-name="com.myStore.test.listener.TestListener"/>
+    </listeners>
+
+    <test name="MyStore Tests">
+        <classes>
+            <class name="com.myStore.test.TestCases.HomePageTest"/>
+            <class name="com.myStore.test.TestCases.loginPageTest"/>
+            <class name="com.myStore.test.TestCases.SearchTest"/>
+            <class name="com.myStore.test.TestCases.FilterTest"/>
+            <class name="com.myStore.test.TestCases.AddToCartTest"/>
+        </classes>
+    </test>
+</suite>
